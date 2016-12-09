@@ -1,5 +1,6 @@
 局部刷新
-```jsp
+
+```js
 var selectedRoomId = null
     var selectedAuchorId = null    
     $(".c-items li").click(function () {
@@ -42,5 +43,7 @@ var selectedRoomId = null
             }
         });
     })
-
 ```
+
+
+
