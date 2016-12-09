@@ -169,6 +169,58 @@ var oTable = $('#sample_editable_1').dataTable({
                 ]
             });
 ```
+服务器端golang
+注意:如果js开启bServerSide选项，搜索分页功能全部依赖后端完成
+```go
+func (self *RouterService) handleGetAllServerDataByAdmin(webAdminMysql *mysql.DbWebAdmin) {
+ self.router.GET("/admingetServerData", func(c *gin.Context) {
+
+  bAuth := webAdminMysql.AuthUserIsLogin(c.ClientIP())
+  if bAuth {
+   //后端处理客户端要求的分页
+   iDisplayStart, _ := strconv.Atoi(c.Query("iDisplayStart"))   //记录开始数
+   iDisplayLength, _ := strconv.Atoi(c.Query("iDisplayLength")) //每页显示记录数
+   iSortCol_0 := c.Query("iSortCol_0")                          //按第几列排序
+   sSortDir_0 := c.Query("sSortDir_0")                          //正序还是逆序
+   sSearch := c.Query("sSearch")                                //搜索
+   fmt.Printf("iDisplayStart=%v,iDisplayLength=%v\n", iDisplayStart, iDisplayLength)
+   fmt.Printf("iSortCol_0=%v,sSortDir_0=%v\n", iSortCol_0, sSortDir_0)
+   fmt.Printf("sSearch=%v\n", sSearch)
+   s2wSlice := webAdminMysql.GetAllServerCfg()
+   //先排序
+   nSortCol, _ := strconv.Atoi(iSortCol_0)
+   if nSortCol == 0 {
+    switch {
+    case sSortDir_0 == "desc":
+     common.SortDesc(&s2wSlice)
+    case sSortDir_0 == "asc":
+     common.SortAsc(&s2wSlice)
+    default:
+     routerlog.Errorf("errValue sSortDir_0:%v", sSortDir_0)
+    }
+   }
+   
+   lenAllData := len(s2wSlice)
+   var index int
+   if iDisplayStart+iDisplayLength >= lenAllData {
+    index = lenAllData
+   } else {
+    index = iDisplayStart + iDisplayLength
+   }
+   limitSlice := s2wSlice[iDisplayStart:index]
+   fmt.Println(limitSlice)
+   counts := len(limitSlice)
+   data := make(map[string]interface{}, counts)
+   data["sEcho"] = c.Query("sEcho")
+   data["iTotalRecords"] = lenAllData
+   data["iTotalDisplayRecords"] = lenAllData
+   data["aaData"] = limitSlice
+   c.JSON(http.StatusOK, data)
+  }
+
+ })
+}
+```
 
 
 
