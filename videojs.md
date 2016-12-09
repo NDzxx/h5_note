@@ -411,8 +411,9 @@ video.js集成例子
 </html>
 
 
-
 ```
+##plugin
+[plugin sample](https://github.com/sprice/videojs-audio-tracks)
 
 
 
