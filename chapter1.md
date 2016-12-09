@@ -18,8 +18,10 @@
     z-index:0;
 }
 ```
-z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
-参考:[CSS z-index 属性](http://www.w3school.com.cn/cssref/pr_pos_z-index.asp)
+z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。  
+  
+ 参考:[CSS z-index 属性](http://www.w3school.com.cn/cssref/pr_pos_z-index.asp)
+
 
 
 
