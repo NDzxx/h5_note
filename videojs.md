@@ -168,6 +168,18 @@ video.js 采用flex布局，所以float这种不起作用
     -o-transition: visibility 0.1s, opacity 0.1s;
     transition: visibility 0.1s, opacity 0.1s;
 }
+
+……省略无关部分
+.video-js .vjs-play-control {
+    /*增加float*/
+    float:left;
+    cursor: pointer;
+    -webkit-box-flex: none;
+    -moz-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+}
 ```
 
 
