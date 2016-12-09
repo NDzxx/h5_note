@@ -67,3 +67,8 @@
 |bx|box-sizing|
 |bxsh:w|-webkit-box-shadow:0 0 0 #000;|
 
+## 3.本地调试
+
+[firefox调试](http://www.w2bc.com/Article/34639)
+
+chrome中按f12打开开发者工具，可查看页面类等详细情况
