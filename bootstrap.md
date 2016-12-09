@@ -36,7 +36,7 @@
 {"name":"iSortingCols","value":1}]  //一共有几列排序
 ```
 
-前端分页ajax一次性读取所有数据使用例子
+前端分页ajax一次性读取所有数据例子
 ```js
 //初始化dataTables
 
@@ -95,7 +95,80 @@ var oTable = $('#sample_editable_1').dataTable({
    }
 
 ```
+后端分页例子
 
+```js
+  var oTable = $('#sample_editable_1').dataTable({
+                "aLengthMenu": [
+                    [5, 15, 20, -1],
+                    [5, 15, 20, "All"] // change per page values here
+                ],
+                // set the initial value
+    bFilter: false,    //去掉搜索框方法三：这种方法可以
+     "sortable": true,      //是否启用排序
+     "sortOrder": "desc",     //排序方式
+    "aaSorting" : [[0, "desc"]],
+                "iDisplayLength": 5,
+                "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+                "sPaginationType": "bootstrap",
+                "oLanguage": {
+     "sProcessing" : "正在获取数据，请稍后...",
+                    "sLengthMenu": "每页显示_MENU_条记录",
+      "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+                    "oPaginate": {
+                        "sPrevious": "前一页",
+                        "sNext": "后一页",
+                    },
+     "sZeroRecords": "抱歉， 没有找到",
+     "sInfoEmpty": "没有数据"
+                },
+    "bProcessing": true, //当datatable获取数据时候是否显示正在处理提示信息。
+    "bServerSide": true, //服务端处理分页
+    "sAjaxSource": "admingetServerData", //ajax请求地址
+    
+    "aoColumns": [   
+     {"mDataProp":"id"},
+     {"mDataProp":"ip"},
+     {"mDataProp":"name"},
+     {"mDataProp":"other"},
+     {"mDataProp":"编辑"},
+     {"mDataProp":"删除"},
+             ],    
+                "aoColumnDefs": [
+     {
+                        "aTargets": [0],
+       "bSortable": true,
+         "bSearchable": true,
+                    },
+     {
+                        "aTargets": [1],
+       "bSortable": false,
+         "bSearchable": true,
+                    },
+     {
+                        "aTargets": [2],
+       "bSortable": false,
+         "bSearchable": true,
+                    },
+     {
+                        "aTargets": [3],
+       "bSortable": false,
+         "bSearchable": true,
+                    },
+     {
+                        "aTargets": [4],
+       "bSortable": false,
+         "bSearchable": false,
+      }
+                    },
+     {
+      "aTargets": [5],
+       "bSortable": false,
+          "bSearchable": false,
+     }
+                ]
+            });
+```
 
 
 
