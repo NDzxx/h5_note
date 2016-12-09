@@ -29,7 +29,7 @@ z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总
     height: 32px;
     margin-left: 1px;
     margin-top: 1px;
-    border-radius: 30px;
+    border-radius: 30px; /*这里是切割部分*、
 }
 ```
 
