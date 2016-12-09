@@ -115,6 +115,29 @@ var player = videojs("example_video", {
     做法1：直接append添加
     */
    $(".vjs-control-bar").append('<button class="vjs-control " id="danmu_send_opt"><u>按钮1</u></button>');
+   /*
+   做法2：dom添加
+   */
+     var controlBar,
+        newElement = document.createElement('div'),
+        newLink = document.createElement('a'),
+        newImage = document.createElement('img');
+    // Assign id and classes to div for icon
+    newElement.id = 'downloadButton';
+    newElement.className = 'downloadStyle vjs-control';
+    // Assign properties to elements and assign to parents
+    newImage.setAttribute('src','http://solutions.brightcove.com/bcls/brightcove-player/download-video/file-download.png');
+    newLink.setAttribute('href','http://www.baidu.com');
+    newLink.appendChild(newImage);
+    newElement.appendChild(newLink);
+    // Get control bar and insert before elements
+    // Remember that getElementsByClassName() returns an array
+    controlBar = document.getElementsByClassName('vjs-control-bar')[0];
+    // Change the class name here to move the icon in the controlBar
+    insertBeforeNode = document.getElementsByClassName('vjs-fullscreen-control')[0];
+    // Insert the icon div in proper location
+    controlBar.insertBefore(newElement,insertBeforeNode);
+    //controlBar.appendChild(newElement);
     
 });
 
