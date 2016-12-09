@@ -60,6 +60,30 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
 
 ```
 ##自定义样式和控制条
+```
+Player
+    PosterImage
+    TextTrackDisplay
+    LoadingSpinner
+    BigPlayButton
+    ControlBar
+        PlayToggle
+        FullscreenToggle
+        CurrentTimeDisplay
+        TimeDivider
+        DurationDisplay
+        RemainingTimeDisplay
+        ProgressControl
+            SeekBar
+              LoadProgressBar
+              PlayProgressBar
+              SeekHandle
+        VolumeControl
+            VolumeBar
+                VolumeLevel
+                VolumeHandle
+        MuteToggle
+```
 ```js
 var player = videojs("example_video", {
     "controls": true,
@@ -84,6 +108,7 @@ var player = videojs("example_video", {
     }
 
 }, function () {
+
 });
 
 ```
