@@ -39,4 +39,7 @@
 |link:css|引入css|             
 |script:src|引入js|
 |script|html中插入js|
-|ul+ | ul及一个li|
+|ul+|ul及一个li|
+|a:link|<a href=”http://”></a>|
+|a:mail|<a
+href=”mailto:“></a>|
