@@ -41,5 +41,4 @@
 |script|html中插入js|
 |ul+|ul及一个li|
 |a:link|<a href=”http://”></a>|
-|a:mail|<a
-href=”mailto:“></a>|
+|a:mail|<a href=”mailto:“></a>|
