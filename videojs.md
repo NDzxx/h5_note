@@ -153,6 +153,21 @@ var player = videojs("example_video", {
 自定义样式：
 
 video.js 采用flex布局，所以float这种不起作用
-
+如果想要使用float,需要修改默认的video.js.css
+```css
+.vjs-has-started .vjs-control-bar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /*原为flex*/
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: visibility 0.1s, opacity 0.1s;
+    -moz-transition: visibility 0.1s, opacity 0.1s;
+    -o-transition: visibility 0.1s, opacity 0.1s;
+    transition: visibility 0.1s, opacity 0.1s;
+}
+```
 
 
