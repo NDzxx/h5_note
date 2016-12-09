@@ -48,4 +48,11 @@
 |div.name|class:name|
 |div.one.two|class:one,two|
 |head>link:css |head加link |
+|p+p |两个p |
+|p*3|3个p|
+|ul>li.item$*6|创建ul下有个li同时class分别为item1，item2.。。|
+|pos|postion,组合可用"pos:s|a|r|f"|
+|t|top,组合a auto|
+|r|right|
+|l|left|
 
