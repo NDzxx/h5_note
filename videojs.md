@@ -150,5 +150,9 @@ var player = videojs("example_video", {
 });
 
 ```
+自定义样式：
+
+video.js 采用flex布局，所以float这种不起作用
+
 
 
