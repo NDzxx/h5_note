@@ -11,6 +11,11 @@ bootstrap 选择框获取选择文字内容
 var selectType = $("#idCombox option:selected").text();
 
 ```
+```js
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/todc-bootstrap/3.1.1-3.2.1/todc-bootstrap.min.css">  
+   <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js">
+```
 
   
 
