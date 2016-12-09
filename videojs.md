@@ -23,6 +23,7 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
     <script src="video-js/ie8/videojs-ie8.js"></script>
     <!-- 加载hls视频插件 -->
     <script src="video-js/videojs-contrib-hls.js"></script>
+    <!-- 加载flash播放器 -->
     <script type="text/javascript">
         videojs.options.flash.swf = "static/video-js/video-js.swf";
     </script>
