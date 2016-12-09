@@ -23,3 +23,9 @@
 |Ctrl+E|最近打开的文件|
 |ALT+F1|查找代码所在位置|
 |Ctrl+Alt+L|代码格式化|
+|Ctrl+R|替换文本|
+|Ctrl+F|查找文本|
+|Ctrl+P|方法参数提示|
+|Ctrl+shift+c|拷贝文件路径|
+|Ctrl+shift+c|拷贝文件路径|
+|Ctrl+alt+shift+c|拷贝相关数据 包括路径和所在行|
