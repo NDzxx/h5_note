@@ -2,7 +2,7 @@
 
 * h5只管控制语义，样式由css来定
 * 给div加一堆用图片构成的边框
-```
+```css
 #videocontainer {
     width: 590px;
     height: 375px;
