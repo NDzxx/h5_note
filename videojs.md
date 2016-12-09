@@ -4,6 +4,7 @@
 > * 弹幕相关
 > * plugin写法
 
+
 _video.js_ 是开源插件，据说甚至可以集合到gitbook上
 
 **note**:
