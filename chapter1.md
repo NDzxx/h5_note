@@ -42,9 +42,9 @@ z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总
 </div>
 
 ```
+* flex布局 设为Flex布局以后，子元素的**float**、clear和vertical-align属性将失效。
 
-
-
+[CSS flex 属性](http://www.runoob.com/cssref/css3-pr-flex.html)
 
 
 
