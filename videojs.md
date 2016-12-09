@@ -59,7 +59,7 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
 </html>
 
 ```
-##自定义样式和控制条
+##自定义控制条
 组件结构
 ```
 Player
@@ -150,7 +150,7 @@ var player = videojs("example_video", {
 });
 
 ```
-自定义样式：
+##自定义样式：
 
 video.js 采用flex布局，所以float这种不起作用
 
