@@ -35,7 +35,7 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
            data-setup="{ &quot;html5&quot; : { &quot;nativeTextTracks&quot; : false } }">
         <source src="你的名字.mp4" type="video/mp4"/>
 		<!-- 加载hls视频
-        <source src="http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8" type='video/mp4'>-->
+        <source src="http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8" type="application/x-mpegURL">-->
     </video>
 
     </div>
