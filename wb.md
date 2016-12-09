@@ -37,3 +37,5 @@
 | --------   | -----: |
 |html:5|html5结构|
 |link:css|引入css|             
+|script:src|引入js|
+|script|html中插入js|
