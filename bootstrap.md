@@ -14,6 +14,28 @@
 
 [jquery datatables 学习笔记](http://www.cnblogs.com/178mz/p/4383519.html)
 
+相关参数(json格式，name对应实际使用的字符串，后面是字符串的值)：
+```json
+[{"name":"sEcho","value":1},            //请求次数
+{"name":"iColumns","value":5},          //列数 
+{"name":"sColumns","value":",,,,"},     //这个没查到
+{"name":"iDisplayStart","value":0},     //记录起始，0表示第一条
+{"name":"iDisplayLength","value":10},   //每页显示的记录数
+{"name":"mDataProp_0","value":"key"},   //第一列名称 
+{"name":"bSortable_0","value":false},   //第一列是否可以排序
+{"name":"mDataProp_1","value":"rentRuleId"},//第二列名称
+{"name":"bSortable_1","value":true},    //第二列是否可以排序  
+{"name":"mDataProp_2","value":"ruleName"},
+{"name":"bSortable_2","value":true},
+{"name":"mDataProp_3","value":"isEnable"},
+{"name":"bSortable_3","value":true},
+{"name":"mDataProp_4","value":"id"},
+{"name":"bSortable_4","value":true},
+{"name":"iSortCol_0","value":1},//第一个排序，value值得是第几列 
+{"name":"sSortDir_0","value":"asc"},//排序是正序还是倒叙
+{"name":"iSortingCols","value":1}]  //一共有几列排序
+```
+
 实际使用例子
 ```js
 //初始化dataTables
