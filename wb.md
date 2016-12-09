@@ -44,9 +44,13 @@
 |a:mail|<a href=”mailto:“></a>|
 | form:get|get表单 |
 | input:hidden|hidden输入框 |
-|div#name|id:name|
+|div#name|id:name|
+|div.name|class:name|
+|div.one.two|class:one,two|
+|head>link:css|head加link|
+|p+p
+两个p
+p*3
+3个p
+ul>li.item$*6
 
-div.name
-class:name
-div.one.two
-class:one,two
