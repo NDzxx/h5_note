@@ -8,6 +8,7 @@ var selectedRoomId = null
         this.children[0].style.background = "url(static/res/home/AnchorSelect.png) no-repeat";
         selectedRoomId = this.getAttribute("roomId")
         selectedAuchorId = this.getAttribute("auchorId")
+/*发送ajax只获取部分图像信息数据*/
         $.ajax({
             type: "get",
             dataType:'json', //接受数据格式
