@@ -153,7 +153,10 @@ var player = videojs("example_video", {
 自定义样式：
 
 video.js 采用flex布局，所以float这种不起作用
+
 如果想要使用float,需要修改默认的video.js.css
+
+并且后面的按钮都要进行样式调整
 ```css
 .vjs-has-started .vjs-control-bar {
     display: -webkit-box;
