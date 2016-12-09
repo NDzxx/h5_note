@@ -7,6 +7,7 @@
 参考文章：
 
 [bootstrap中使用datatables](https://my.oschina.net/tongjh/blog/213932)
+
 实际使用例子
 ```js
 //初始化dataTables
@@ -18,7 +19,7 @@ var oTable = $('#sample_editable_1').dataTable({
                     [5, 15, 20, "All"] // change per page values here
                 ],
                 // set the initial value
-    "aaSorting" : [[0, "desc"]],
+    "aaSorting" : [[0, "desc"]],/*排序*/
                 "iDisplayLength": 5,
                 "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
                 "sPaginationType": "bootstrap",
