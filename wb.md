@@ -51,8 +51,19 @@
 |p+p |两个p |
 |p*3|3个p|
 |ul>li.item$*6|创建ul下有个li同时class分别为item1，item2.。。|
-|pos|postion,组合可用"pos:s|a|r|f"|
+|pos|postion|
 |t|top,组合a auto|
 |r|right|
 |l|left|
+|b|bottom|
+|z|z-index|
+|fl|float|
+|cl|clear|
+|d|display|
+|v|visibility|
+|ov|overflow|
+|zoo|zoom:1|
+|cp|clip|
+|bx|box-sizing|
+|bxsh:w|-webkit-box-shadow:0 0 0 #000;|
 
