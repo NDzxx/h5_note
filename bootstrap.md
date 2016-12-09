@@ -12,6 +12,8 @@
 
 [datables遍历方法](http://blog.csdn.net/zhangchuccc/article/details/5648533)
 
+[jquery datatables 学习笔记](http://www.cnblogs.com/178mz/p/4383519.html)
+
 实际使用例子
 ```js
 //初始化dataTables
