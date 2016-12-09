@@ -60,6 +60,7 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
 
 ```
 ##自定义样式和控制条
+组件结构
 ```
 Player
     PosterImage
