@@ -43,4 +43,10 @@
 |a:link|<a href=”http://”></a>|
 |a:mail|<a href=”mailto:“></a>|
 | form:get|get表单 |
-|input:hidden|hidden输入框|
+| input:hidden|hidden输入框 |
+|div#name|id:name|
+
+div.name
+class:name
+div.one.two
+class:one,two
