@@ -36,10 +36,11 @@ z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总
 
 ```html
 <div class="portrait">
-                                <div>
-                                    <img class="portraitImg" src="static/res/temp/1.jpg" />
-                                </div>
-                            </div>
+    <div>
+        <img class="portraitImg" src="static/res/temp/1.jpg" />
+    </div>
+</div>
+
 ```
 
 
