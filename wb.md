@@ -19,4 +19,5 @@
 | Ctrl+G   |  跳转到对应行|
 | Ctrl+Shift+Up/Down  |  代码上/下移动|
 | 选中文本，按Ctrl+Shift+F7  | 高亮显示所有该文本，按Esc高亮消失|
+|Ctrl+B|Ctrl+B|
 
