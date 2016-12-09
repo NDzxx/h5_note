@@ -180,6 +180,17 @@ video.js 采用flex布局，所以float这种不起作用
     -ms-flex: none;
     flex: none;
 }
+
+.video-js .vjs-fullscreen-control {
+    cursor: pointer;
+    -webkit-box-flex: none;
+    -moz-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    /*增加float*/
+    float: right;
+}
 ```
 
 
