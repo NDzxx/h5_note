@@ -30,4 +30,8 @@
 |Ctrl+shift+c|拷贝文件路径|
 |Ctrl+alt+shift+c|拷贝相关数据 包括路径和所在行|
 |Ctrl+shift+v|从历史记录中粘贴|
-|ctrl+Y  |删除整行   |
+|Ctrl+Y|删除整行|
+
+###zencoding-输入左边缩写，按下tab键就ok啦
+| zencoding    |  含义 |
+| --------   | -----: |
