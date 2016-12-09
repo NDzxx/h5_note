@@ -21,10 +21,10 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
     <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
     <script src="video-js/video.js" type="text/javascript" charset="utf-8"></script>
     <script src="video-js/ie8/videojs-ie8.js"></script>
+    <script src="video-js/videojs-contrib-hls.js"></script>
     <script type="text/javascript">
         videojs.options.flash.swf = "static/video-js/video-js.swf";
     </script>
-
 </head>
 <body>
 
@@ -33,22 +33,14 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
            width="800" height="600" align="middle" poster=""
            data-setup="{ &quot;html5&quot; : { &quot;nativeTextTracks&quot; : false } }">
         <source src="你的名字.mp4" type="video/mp4"/>
-		<!--
+		<!-- 加载hls视频
         <source src="http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8" type='video/mp4'>-->
     </video>
 
-    <div id="btnCtrl" class="oriCtrl">
-        <div id="idBtnPlay" type="button" title="播放" onclick="onPlay()"></div>
-        <div id="idBtnFs" type="button" title="全屏" onclick="onFullScreen()"></div>
-        <!--
-        <button id="idBtnPlay" type="button" onclick="onPlay()">播放</button>
-        <button id="idBtnStop" type="button" onclick="onPause()">暂停</button>
-        <button id="idBtnFull" type="button" onclick="onFullscreen()">全屏</button>
-        -->
     </div>
 </div>
 </body>
-<!--<script src="js/btnctrl.js" type="text/javascript" charset="utf-8"></script>-->
+
 </html>
 
 
