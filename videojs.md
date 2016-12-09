@@ -200,6 +200,7 @@ video.js 采用flex布局，所以float这种不起作用
 使用开源jquery.danmu.js
 
 [jquery弹幕插件使用](http://www.jq22.com/jquery-info2123)
+
 https://github.com/chiruom/jquery.danmu.js
 video.js集成例子
 ```js
