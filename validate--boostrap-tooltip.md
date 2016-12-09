@@ -60,6 +60,7 @@ function CheckRegister(){
 		},
 		
 		errorPlacement: function (error, element) {
+                        /*tooltip使用*/
 			$(element).tooltip('destroy'); /*必需*/
 			$(element).attr('title', $(error).text()).tooltip('show'); 
 		},
@@ -78,3 +79,4 @@ function CheckRegister(){
 }
 
 ```
+改进：或可利用sco.tooltip.js改变默认bootstrap的黑色样式
