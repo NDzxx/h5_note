@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [布局](chapter1.md)
     * [局部刷新](div.md)
+    * [metronic](metronic.md)
 * [webstorm](wb.md)
 * [bootstrap相关](bootstrap.md)
     * [dataTables使用](dataTables.md)
