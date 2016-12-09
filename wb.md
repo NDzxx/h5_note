@@ -42,4 +42,4 @@
 |ul+|ul及一个li|
 |a:link|<a href=”http://”></a>|
 |a:mail|<a href=”mailto:“></a>|
-| | |
+| form:get|get表单 |
