@@ -36,7 +36,7 @@
 {"name":"iSortingCols","value":1}]  //一共有几列排序
 ```
 
-实际使用例子
+前端分页ajax一次性读取所有数据使用例子
 ```js
 //初始化dataTables
 
@@ -95,6 +95,7 @@ var oTable = $('#sample_editable_1').dataTable({
    }
 
 ```
+
 
 
 
