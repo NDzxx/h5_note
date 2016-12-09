@@ -2,5 +2,5 @@
 demo1是由cmd markdown提供
 demo2由msdn提供，全部都可用于gitbook
 
-[gitbook插件](http://gitbook.zhangjikai.com/bookjson.html)
+[gitbook使用](http://gitbook.zhangjikai.com/bookjson.html)
 
