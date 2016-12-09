@@ -60,4 +60,31 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
 
 ```
 ##自定义样式和控制条
+```js
+var player = videojs("example_video", {
+    "controls": true,
+    "autoplay": false,
+    "preload": "auto",
+    "loop": false,
+    controlBar: {
+        captionsButton: false,
+        chaptersButton: false,
+        playbackRateMenuButton: true,
+        LiveDisplay: true,
+        subtitlesButton: false,
+        remainingTimeDisplay: true,
+
+        progressControl: true,
+
+        volumeMenuButton: {
+            inline: false,
+            vertical: true
+        },//竖着的音量条
+        fullscreenToggle: true
+    }
+
+}, function () {
+});
+
+```
 
