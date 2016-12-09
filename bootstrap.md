@@ -7,8 +7,7 @@
 参考文章：
 
 [bootstrap中使用datatables](https://my.oschina.net/tongjh/blog/213932)
-
-
+实际使用例子
 ```js
 //初始化dataTables
 
