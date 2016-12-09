@@ -80,3 +80,4 @@ function CheckRegister(){
 
 ```
 改进：或可利用sco.tooltip.js改变默认bootstrap的黑色样式
+[sco扩展](/ http://github.com/terebentina/sco.js)
