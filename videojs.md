@@ -85,6 +85,7 @@ Player
                 VolumeHandle
         MuteToggle
 ```
+使用：
 ```js
 var player = videojs("example_video", {
     "controls": true,
