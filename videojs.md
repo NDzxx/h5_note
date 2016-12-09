@@ -11,7 +11,7 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
 
 ##直接使用
 
-```html
+```js
 <!doctype html>
 <html>
 <head>
