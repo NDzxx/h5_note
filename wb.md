@@ -47,10 +47,5 @@
 |div#name|id:name|
 |div.name|class:name|
 |div.one.two|class:one,two|
-|head>link:css|head加link|
-|p+p
-两个p
-p*3
-3个p
-ul>li.item$*6
+|head>link:css |head加link |
 
