@@ -48,7 +48,43 @@ var selectedRoomId = null
         });
     })
 ```
-后端代码
+后端代码golang
+```golang
+func (p *LiveRoomController) MenuInfo() {
+	idRoom, err := strconv.Atoi(p.Ctx.Input.Param("0"))
+	if err != nil {
+		p.Abort("404")
+		return
+	}
+
+	idMenu, err := strconv.Atoi(p.Ctx.Input.Param("1"))
+	if err != nil {
+		p.Abort("404")
+		return
+	}
+
+	roomDataLogic := models.NewRoomDataLogic(int32(idRoom))
+	var menu models.TblMenu
+       /*获取sql数据然后组装json给前端*/
+	if !roomDataLogic.LoadMenu(int32(idMenu), &menu) {
+		return
+	}
+
+	if menu.RoomId != int32(idRoom) {
+		return
+	}
+
+	p.Data["json"] = map[string]interface{}{
+		"code":       200,
+		"AnchorName": menu.AnchorName,
+		"RoomTitle":   menu.Desc, //暂时先不改页面那边的名称
+		"LookerCount": roomDataLogic.GetWatcherNum(),
+		"RoomImg": "static/res/snapshot/" + roomDataLogic.GetSnapshot(idMenu),
+		"IsOnline":roomDataLogic.IsOnline(idMenu),
+	}
+	p.ServeJSON()
+}
+```
 
 
 
