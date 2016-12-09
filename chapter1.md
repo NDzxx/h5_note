@@ -32,12 +32,12 @@ z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总
     border-radius: 30px; /*这里是切割部分*/
 }
 ```
-* 图片等比缩放
+* 图片等比缩放 只设置宽度（高度）而不是同时设置高宽
 
 ```html
 <div class="portrait">
     <div>
-        <img class="portraitImg" src="static/res/temp/1.jpg" />
+        <img class="portraitImg" src="static/res/temp/1.jpg" width="50" />
     </div>
 </div>
 
