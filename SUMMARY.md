@@ -6,6 +6,7 @@
 * [webstorm](wb.md)
 * [bootstrap相关](bootstrap.md)
     * [datables使用](validate--boostrap-tooltip-表单验证示例.md)
+    * [Validate + Boostrap tooltip 表单验证示例](validate--boostrap-tooltip-表单验证示例.md)
 * [echart相关](echart.md)
 * [video.js相关](videojs.md)
 * [markdown\_ref](markdownref.md)
