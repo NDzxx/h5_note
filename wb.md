@@ -8,6 +8,7 @@
 百度云:z8965043/直播/wb_lienceServer.zip
 
 ## 2.快捷键
+通用IntelliJ-Idea 
 | 快捷键     |  含义 |
 | --------   | -----: |
 | Shift+F6    |  重构-重命名 |
