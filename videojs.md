@@ -110,7 +110,11 @@ var player = videojs("example_video", {
     }
 
 }, function () {
-    //次处用于自定义控制条等
+    /*次处用于自定义控制条等*/
+    /*
+    做法1：直接append添加
+    */
+   $(".vjs-control-bar").append('<button class="vjs-control " id="danmu_send_opt"><u>按钮1</u></button>');
     
 });
 
