@@ -8,7 +8,8 @@
 百度云:z8965043/直播/wb_lienceServer.zip
 
 ## 2.快捷键
-通用IntelliJ-Idea 
+###通用IntelliJ-Idea
+ 
 | 快捷键     |  含义 |
 | --------   | -----: |
 | Shift+F6    |  重构-重命名 |
@@ -17,3 +18,4 @@
 | Ctrl+D   |  复制行|
 | Ctrl+G   |  跳转到对应行|
 | Ctrl+Shift+Up/Down  |  代码上/下移动|
+
