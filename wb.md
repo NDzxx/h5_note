@@ -13,3 +13,4 @@
 | Shift+F6    |  重构-重命名 |
 | Ctrl+/ 或 Ctrl+Shift+/    |  注释（// 或者/*…*/ ） |
 | Ctrl+X    |  删除行|
+| Ctrl+D   |  复制行|
