@@ -16,7 +16,7 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
 - brightcover 播放器是基于video.js内核封装的，所以它的文档也能参考
  - [download-video btn](http://docs.brightcove.com/en/video-cloud/brightcove-player/samples/download-video.html)
  - [customize-appearance](https://docs.brightcove.com/en/perform/brightcove-player/guides/customize-appearance.html)
-- [customize-appearance](http://docs.brightcove.com/en/video-cloud/brightcove-player/guides/customize-appearance-1x.html#specificity)
+ - [customize-appearance](http://docs.brightcove.com/en/video-cloud/brightcove-player/guides/customize-appearance-1x.html#specificity)
 ##直接使用
 注意点：加载flash动画后，chrome ie firefox播放界面才能统一，否则各有各的界面
 ```html
