@@ -85,7 +85,7 @@ Player
                 VolumeHandle
         MuteToggle
 ```
-使用：
+使用：以添加按钮为例子
 ```js
 var player = videojs("example_video", {
     "controls": true,
@@ -139,6 +139,14 @@ var player = videojs("example_video", {
     controlBar.insertBefore(newElement,insertBeforeNode);
     //controlBar.appendChild(newElement);
     
+   /*
+    做法3：简化2的写法
+    */
+    var newbtn = document.createElement('btn');
+    newbtn.innerHTML = '<button class="vjs-control" id="downloadButton"></button>';
+    var controlBar = document.getElementsByClassName('vjs-control-bar')[0];
+    insertBeforeNode = document.getElementsByClassName('vjs-fullscreen-control')[0];
+    controlBar.insertBefore(newbtn,insertBeforeNode);
 });
 
 ```
