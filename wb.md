@@ -15,3 +15,4 @@
 | Ctrl+X    |  删除行|
 | Ctrl+D   |  复制行|
 | Ctrl+G   |  跳转到对应行|
+| Ctrl+Shift+Up/Down  |  代码上/下移动|
