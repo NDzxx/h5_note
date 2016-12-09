@@ -110,7 +110,7 @@ var player = videojs("example_video", {
     }
 
 }, function () {
-
+    //次处用于自定义控制条等
 });
 
 ```
