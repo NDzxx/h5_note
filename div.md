@@ -1,4 +1,5 @@
-局部刷新
+#局部刷新
+前端代码
 
 ```js
 var selectedRoomId = null
@@ -13,7 +14,9 @@ var selectedRoomId = null
             type: "get",
             dataType:'json', //接受数据格式
             cache:false,
-            url: "/liveroom/menuinfo/" + this.getAttribute("roomId") + "/" + this.getAttribute("auchorId"),
+            url: "/liveroom/menuinfo/" 
+                 + this.getAttribute("roomId")
+                 + "/" + this.getAttribute("auchorId"),
             beforeSend: function(XMLHttpRequest){
             },
             success: function(data){
@@ -45,6 +48,8 @@ var selectedRoomId = null
         });
     })
 ```
+后端代码
+
 
 
 
