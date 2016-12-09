@@ -21,6 +21,17 @@
 z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。  
   
  参考:[CSS z-index 属性](http://www.w3school.com.cn/cssref/pr_pos_z-index.asp)
+* 图片圆角
+```css
+.thlistItem .portrait .portraitImg {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-left: 1px;
+    margin-top: 1px;
+    border-radius: 30px;
+}
+```
 
 
 
