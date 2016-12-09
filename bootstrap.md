@@ -9,6 +9,7 @@
 [datables中文网](http://datatables.club/)
 
 [bootstrap中使用datatables](https://my.oschina.net/tongjh/blog/213932)
+[遍历方法](http://blog.csdn.net/zhangchuccc/article/details/5648533)
 
 实际使用例子
 ```js
@@ -69,6 +70,7 @@ var oTable = $('#sample_editable_1').dataTable({
    }
 
 ```
+
 
 
 
