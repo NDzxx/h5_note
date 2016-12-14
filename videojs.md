@@ -1,26 +1,29 @@
-#video.js 
+video.js
+
 > * 直接使用
 > * 自定义控制条和样式
 > * 弹幕相关
 > * plugin写法
 
-
 _video.js_ 是开源插件，据说甚至可以集合到gitbook上
 
-**note**:
+**note**:  
 一个需要注意的点是下载下来的demo.html直接右键浏览器是打不开的，需要用iis或者nginx 或者beego这些服务端的玩意加载后，在前端浏览器才能看到视频页面。
 
 参考文章:
 
-- [HTML5视频播放器Video.Js的使用 ](http://coderlt.coding.me/2016/02/26/videojs-readme/)
-- [api使用](http://docs.videojs.com/docs/api/index.html)
-- brightcover 播放器是基于video.js内核封装的，所以它的文档也能参考
- - [download-video btn](http://docs.brightcove.com/en/video-cloud/brightcove-player/samples/download-video.html)
- - [customize-appearance](https://docs.brightcove.com/en/perform/brightcove-player/guides/customize-appearance.html)
- - [customize-appearance](http://docs.brightcove.com/en/video-cloud/brightcove-player/guides/customize-appearance-1x.html#specificity)
+* [HTML5视频播放器Video.Js的使用 ](http://coderlt.coding.me/2016/02/26/videojs-readme/)
+* [api使用](http://docs.videojs.com/docs/api/index.html)
+* brightcover 播放器是基于video.js内核封装的，所以它的文档也能参考
+  * [download-video btn](http://docs.brightcove.com/en/video-cloud/brightcove-player/samples/download-video.html)
+  * [customize-appearance](https://docs.brightcove.com/en/perform/brightcove-player/guides/customize-appearance.html)
+  * [customize-appearance](http://docs.brightcove.com/en/video-cloud/brightcove-player/guides/customize-appearance-1x.html#specificity)
 
-##直接使用
+
+## 直接使用
+
 注意点：加载flash动画后，chrome ie firefox播放界面才能统一，否则各有各的界面
+
 ```html
 <!doctype html>
 <html>
@@ -46,7 +49,7 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
            width="800" height="600" align="middle" poster=""
            data-setup="{ &quot;html5&quot; : { &quot;nativeTextTracks&quot; : false } }">
         <source src="你的名字.mp4" type="video/mp4"/>
-	  <!-- 加载hls视频-->
+      <!-- 加载hls视频-->
         <source src="http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8" 
          type="application/x-mpegURL">
         <!-- 加载rtmp视频-->
@@ -58,10 +61,12 @@ _video.js_ 是开源插件，据说甚至可以集合到gitbook上
 </body>
 
 </html>
-
 ```
-##自定义控制条
+
+## 自定义控制条
+
 组件结构
+
 ```
 Player
     PosterImage
@@ -86,7 +91,9 @@ Player
                 VolumeHandle
         MuteToggle
 ```
+
 使用：以添加按钮为例子
+
 ```js
 var player = videojs("example_video", {
     "controls": true,
@@ -139,7 +146,7 @@ var player = videojs("example_video", {
     // Insert the icon div in proper location
     controlBar.insertBefore(newElement,insertBeforeNode);
     //controlBar.appendChild(newElement);
-    
+
    /*
     做法3：简化2的写法
     */
@@ -149,15 +156,16 @@ var player = videojs("example_video", {
     insertBeforeNode = document.getElementsByClassName('vjs-fullscreen-control')[0];
     controlBar.insertBefore(newbtn,insertBeforeNode);
 });
-
 ```
-##自定义样式：
+
+## 自定义样式：
 
 video.js 采用flex布局，所以float这种不起作用
 
 如果想要使用float,需要修改默认的video.js.css
 
 并且后面的按钮都要进行样式调整
+
 ```css
 .vjs-has-started .vjs-control-bar {
     display: -webkit-box;
@@ -197,7 +205,8 @@ video.js 采用flex布局，所以float这种不起作用
 }
 ```
 
-##弹幕
+## 弹幕
+
 使用开源jquery.danmu.js
 
 [jquery弹幕插件使用](http://www.jq22.com/jquery-info2123)
@@ -205,6 +214,7 @@ video.js 采用flex布局，所以float这种不起作用
 [jquery弹幕插件 github](https://github.com/chiruom/jquery.danmu.js)
 
 video.js集成例子
+
 ```js
 <!doctype html>
 
@@ -218,16 +228,16 @@ video.js集成例子
 <script src="danmu/jquery-1.11.1.min.js"></script>
 <script src="../../../../../桌面/tanmu/DanmuPlayer/src/js/jquery.danmu.js"></script>
 <script type="text/javascript">
-	videojs.options.flash.swf = "video-js/video-js.swf";
+    videojs.options.flash.swf = "video-js/video-js.swf";
 </script>
    <title>RtmpPlayerTest</title>
 </head>
 <body>
-	<video id="example_video" class="video-js vjs-default-skin  vjs-big-play-centered" controls preload="auto" width="1024" height="768"
+    <video id="example_video" class="video-js vjs-default-skin  vjs-big-play-centered" controls preload="auto" width="1024" height="768"
       poster=""
       data-setup='{ "html5" : { "nativeTextTracks" : false } }'>>
      <source src="rtmp://live.hkstv.hk.lxdns.com/live/hks" type="rtmp/flv" />
-	<!--  <source src="http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8" type="application/x-mpegURL" /> -->
+    <!--  <source src="http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8" type="application/x-mpegURL" /> -->
     <div id="danmu">
     </div>
   <p class="vjs-no-js">
@@ -277,7 +287,7 @@ video.js集成例子
 
 </body>
 <script type="text/javascript">
-	var player = videojs('example_video');
+    var player = videojs('example_video');
 </script>
 
 
@@ -410,11 +420,9 @@ video.js集成例子
     }
 </script>
 </html>
-
-
 ```
-##plugin
+
+## plugin
+
 [plugin sample](https://github.com/sprice/videojs-audio-tracks)
-
-
 
