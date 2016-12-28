@@ -6,3 +6,5 @@
 [我的简书](http://www.jianshu.com)
 
 [HTML5 Web Speech API Demo](http://blog.csdn.net/leecho571/article/details/9316799)
+
+[html5语音输入功能speech属性](https://www.douban.com/note/258700459)
