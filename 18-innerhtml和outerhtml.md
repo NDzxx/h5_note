@@ -1,6 +1,6 @@
 #innerhtml outerhtml
 
-一、区别：
+##一、区别：
 
 1）innerHTML:
 
@@ -11,7 +11,7 @@
 　　除了包含innerHTML的全部内容外, 还包含对象标签本身。
 
 
-二、例子：
+##二、例子：
 ```
 <div id="test"> 
    <span style="color:red">test1</span> test2 
