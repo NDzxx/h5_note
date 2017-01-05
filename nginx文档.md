@@ -114,7 +114,7 @@ http {
 
 
 ```
-原因：[](https://helping-squad.com/transcoding-your-video-with-nginx/)
+原因：[详细原因地址](https://helping-squad.com/transcoding-your-video-with-nginx/)
 
 As mentioned earlier under Windows you cannot add the commandline directly to the config. 
 
