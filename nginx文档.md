@@ -134,6 +134,8 @@ For Windows just setup a batch file which you can start with a desktop shortcut.
  
  [ffmpeg常用基本命令](http://www.cnblogs.com/wainiwann/p/4128154.html)
  
+ [ Nginx RTMP 模块 nginx-rtmp-module 指令详解](http://blog.csdn.net/defonds/article/details/9274479/)
+ 
 
 
 
