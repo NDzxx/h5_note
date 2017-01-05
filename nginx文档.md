@@ -25,8 +25,11 @@ sudo apt-get install ffmpeg
 ```
 ##使用命令
 ```bash
-sudo /usr/local/nginx/sbin/nginx -s stop
+关闭
+sudo /usr/local/nginx/sbin/nginx -s stop  
+开启
 sudo /usr/local/nginx/sbin/nginx
+重新载入配置（重启）
 sudo /usr/local/nginx/sbin/nginx -s reload
 ```
 
