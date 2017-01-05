@@ -1,12 +1,6 @@
 # nginx-rtmp使用
 
 ```bash
-linux上ppa安装ffmpeg（ubuntu 14.04测试通过）
-sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
-sudo apt-get update
-sudo apt-get install ffmpeg
-```
-```bash
 安装编译 nginx 所需要的库
 sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev
 下载 nginx-1.9.15.tar.gz
@@ -22,6 +16,18 @@ cd nginx-1.9.15
 make
 sudo make install
 ```
+
+
+
+
+
+```bash
+linux上ppa安装ffmpeg（ubuntu 14.04测试通过）
+sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
+sudo apt-get update
+sudo apt-get install ffmpeg
+```
+
 
 
 
