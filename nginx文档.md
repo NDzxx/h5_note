@@ -87,6 +87,7 @@ http {
 		location /stat {     #第二处添加的location字段。
             rtmp_stat all;
 			rtmp_stat_stylesheet stat.xsl;
+			#访问http://ip:8082/stat可以查看状态
 		}
 
          location /stat.xsl { #第二处添加的location字段。
