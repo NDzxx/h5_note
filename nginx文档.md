@@ -114,6 +114,14 @@ http {
 
 
 ```
+原因：[](https://helping-squad.com/transcoding-your-video-with-nginx/)
+
+As mentioned earlier under Windows you cannot add the commandline directly to the config. 
+
+For Windows just setup a batch file which you can start with a desktop shortcut.
+
+ You can then use the shortcut when necessary to start the transcoding.
+ 
 
 
 
