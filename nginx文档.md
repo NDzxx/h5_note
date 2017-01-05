@@ -23,6 +23,12 @@ sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
 sudo apt-get update
 sudo apt-get install ffmpeg
 ```
+##使用命令
+```bash
+sudo /usr/local/nginx/sbin/nginx -s stop
+sudo /usr/local/nginx/sbin/nginx
+sudo /usr/local/nginx/sbin/nginx -s reload
+```
 
 
 
