@@ -34,9 +34,12 @@ sudo /usr/local/nginx/sbin/nginx -s reload
 ```
 ##nginx-rtmp hls配置
 参考链接：
-http://www.cnblogs.com/jys509/p/5653720.html
+
+[Mac直播服务器Nginx配置对HLS的支持](http://www.cnblogs.com/jys509/p/5653720.html)
 
 [mac上搭建nginx-rtmp服务](http://www.cnblogs.com/jys509/p/5649066.html)
+
+
 
 
 
