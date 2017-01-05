@@ -14,4 +14,5 @@
     * [cmd\_markdown](blog.md)
     * [csdn\_makedown](csdnmakedown.md)
 * [1.8 innerhtml和outerhtml](18-innerhtml和outerhtml.md)
+* [nginx文档](nginx文档.md)
 
