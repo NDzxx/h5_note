@@ -39,6 +39,81 @@ sudo /usr/local/nginx/sbin/nginx -s reload
 
 [mac上搭建nginx-rtmp服务](http://www.cnblogs.com/jys509/p/5649066.html)
 
+[使用Nginx+FFMPEG搭建HLS直播转码服务器 ](http://blog.csdn.net/wutong_login/article/details/42292787)
+
+```
+worker_processes  1;
+
+error_log  logs/error.log debug;
+
+events {
+    worker_connections  1024;
+}
+
+rtmp {
+    server {
+        listen 1935;
+		application zbcs {
+               live on;
+
+		#exec_static ffmpeg -i rtmp://192.168.233.130:1935/zbcs/$name 
+		#-c:a aac -b:a 32k -c:v libx264 -b:v 128K -f flv 								                 rtmp://192.168.233.130:1935/hls/$name_low -report;
+		}
+				
+        application hls {
+            live on;
+		    hls on;  
+		    hls_path temp/zxx;  
+		    hls_fragment 5s;
+			hls_nested on;
+        }
+       	
+		application small {
+            live on;
+		}
+   }
+
+}
+
+http {
+    server {
+        listen      8082;
+		
+        location / {
+            root www;
+        }
+		
+		location /stat {     #第二处添加的location字段。
+            rtmp_stat all;
+			rtmp_stat_stylesheet stat.xsl;
+		}
+
+         location /stat.xsl { #第二处添加的location字段。
+			root www;
+		}
+		
+		location /control {    
+            rtmp_control all;    
+        }    
+  
+				
+		location /hls {  
+           #server hls fragments  
+			types{  
+				application/vnd.apple.mpegurl m3u8;  
+				video/mp2t ts;  
+			}  
+			alias temp/zxx;
+			add_header Cache-Control no-cache;
+			
+        }  
+
+    }
+}
+
+
+```
+
 
 
 
