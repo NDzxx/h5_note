@@ -55,7 +55,7 @@ rtmp {
         listen 1935;
 		application zbcs {
                live on;
-               #注释内容直线于mac和linux，在win下目前不可用
+               #注释内容直接应用于mac和linux，在win下目前不可用
 		#exec_static ffmpeg -i rtmp://192.168.233.130:1935/zbcs/$name 
 		#-c:a aac -b:a 32k -c:v libx264 -b:a 32k -c:v libx264 -b:v 128K -f
 		#rtmp://192.168.233.130:1935/hls/$name_low;
