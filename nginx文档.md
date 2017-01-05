@@ -122,6 +122,14 @@ For Windows just setup a batch file which you can start with a desktop shortcut.
 
  You can then use the shortcut when necessary to start the transcoding.
  
+ Win的做法：
+ ```bash
+ ffmpeg -i rtmp://192.168.233.130:1935/zbcs/113  
+      -c:a aac -b:a 32k -c:v libx264 -b:v 128K
+      -f flv rtmp://192.168.233.130:1935/hls/113_low 
+
+ ```
+ 
 
 
 
