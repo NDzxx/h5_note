@@ -30,3 +30,5 @@ http://blog.csdn.net/jiary5201314/article/details/51281707
 http://www.jikexueyuan.com/course/1388_2.html xxs视频
 
 http://www.jikexueyuan.com/course/1500.html csrf视频
+
+[Web漏洞扫描器使用方法](http://jingyan.baidu.com/article/37bce2be71c8ad1002f3a222.html)
